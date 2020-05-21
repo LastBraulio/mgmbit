@@ -1,8 +1,8 @@
 <?php
 
-require_once "conexion/conexion.php";	
+require_once "config/conexion.php";	
 
-Class Configuracion extends Conexiones{
+Class Configuracion extends Conexiones{ 
 	
 	public function configurar_menus_opciones($id){
 		$sentencia = "select t1.* from menus t1, menu_perfil_usuario t2, usu_usuario_perfil t3, usuarios t4 where t1.id_menu = t2.id_menus 

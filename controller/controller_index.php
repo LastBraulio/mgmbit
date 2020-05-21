@@ -1,37 +1,38 @@
 <?php
 
-require_once ("model/modelo_notas.php");
+require_once ("model/modelo_index.php");
 require_once ("library/configuracion.php");
-require_once ("conexion/configdb.php");
+require_once ("config/configdb.php");
 
-class Controller_notas {
-	private $modelo_notas;
+class Controller_index {
+	private $modelo_cliente;
 	private $db;
 	
 	function __construct(){
 		
-        $this->modelo_notas= new Modelo_notas();
+        $this->modelo_cliente= new Modelo_index();
 		$this->db = new Configuracion();
 		
     }
 	function index(){
-		//$query =$this->model_e->get();
-		include("html/view_notas/header.php");
-		$id = $_COOKIE["cedula"];
-		$menu = $this->db->configurar_menus_opciones($id);
-		include("html/view_notas/body.php");
-		include("html/view_notas/link.php");
-		include("html/footer.php");
+		include("view/view_index/view01.php");
+		include("view/view_index/view_1.php");
     }
+	function ejemplo1(){
+		
+		$arra = array(
+			"titulo"=> "Esto es Un titulo",
+			"cuerpo"=>"Esto es un cuerpo....."
+		);
+		include("html/view_cliente/view_cliente.php");
+	}
 	function ajaxtabla(){
-
-		$id = $_COOKIE["cedula"];
-		$tabla= $this->modelo_notas->mostrar_ajax($id);
+		$tabla= $this->modelo_cliente->mostrar_ajax();
 		echo $tabla;
 	}
 	function get_tipo_cliente()
 	{
-		$tabla= $this->modelo_notas->tipo_cliente_ajax();
+		$tabla= $this->modelo_cliente->tipo_cliente_ajax();
 		echo $tabla;
 	}
 	function insert(){
@@ -50,13 +51,13 @@ class Controller_notas {
 			"tipo_cliente"=>$_POST['InputTipClientcss']
 		);
 		//print_r($data); exit;
-		$msn= $this->modelo_notas->insert($data);
+		$msn= $this->modelo_cliente->insert($data);
 		echo $msn;
 	}
 	function view1()
 	{
 		$buscar = $_GET["id"];
-		$data= $this->modelo_notas->getid($buscar);
+		$data= $this->modelo_cliente->getid($buscar);
 		
 		$data = array(
 			"cedula"=> $data[0]["cedula"],
@@ -78,7 +79,7 @@ class Controller_notas {
 	function edit1()
 	{
 		$buscar = $_GET["id"];
-		$data= $this->modelo_notas->getid($buscar);
+		$data= $this->modelo_cliente->getid($buscar);
 		//print_r($data); exit;
 		$data = array(
 			"cedula"=> $data[0]["cedula"],
@@ -119,31 +120,20 @@ class Controller_notas {
 			"tipo_cliente"=> $_POST['InputTipClientcss_u']
 		);
 		//print_r($data); exit;
-		$msn= $this->modelo_notas->update($id,$data);
+		$msn= $this->modelo_cliente->update($id,$data);
 		echo $msn;
 	}
 	function delete1()
 	{
 		$id=$_GET['id'];
-		$msn= $this->modelo_notas->delete($id);
+		$msn= $this->modelo_cliente->delete($id);
 		echo $msn;
 	}
 	public function error404()
 	{
 		include("html/header.php");
-		$id = $_COOKIE["cedula"];
-        $menu = $this->db->configurar_menus_opciones($id);
 		include("html/error404.php");
 		include("html/link.php");
-		include("html/footer.php");
-	}
-	public function tablacalif()
-	{
-		include("html/view_notas/header.php");
-		$id = $_COOKIE["cedula"];
-		$menu = $this->db->configurar_menus_opciones($id);
-		include("html/view_notas/body.php");
-		include("html/view_notas/link.php");
 		include("html/footer.php");
 	}
 	

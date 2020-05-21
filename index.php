@@ -1,7 +1,7 @@
 <?php
-	require_once('controller/controller_clientes2.php');
+	require_once('controller/controller_index.php');
 	
-	$controller= new Controller_clientes2();
+	$controller= new Controller_index();
     
     if(!empty($_REQUEST['m'])){
         $metodo=$_REQUEST['m'];

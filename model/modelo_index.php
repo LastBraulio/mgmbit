@@ -1,9 +1,9 @@
 <?php
 
-require_once ("conexion/conexion.php");
+require_once ("config/conexion.php");
 
 
-Class Modelo_cliente extends Conexiones{
+Class Modelo_index extends Conexiones{
 	public $tabla = "countries";
 	
 	public function mostrar_ajax()
