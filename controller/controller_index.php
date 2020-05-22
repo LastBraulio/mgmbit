@@ -10,8 +10,8 @@ class Controller_index {
 	
 	function __construct(){
 		
-        $this->modelo_cliente= new Modelo_index();
-		$this->db = new Configuracion();
+       // $this->modelo_cliente= new Modelo_index();
+		//$this->db = new Configuracion();
 		
     }
 	function index(){
