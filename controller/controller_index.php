@@ -21,10 +21,7 @@ class Controller_index {
 	
 	public function error404()
 	{
-		include("html/header.php");
-		include("html/error404.php");
-		include("html/link.php");
-		include("html/footer.php");
+		include("view/error404.php");
 	}
 	
 }
