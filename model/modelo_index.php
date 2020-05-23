@@ -9,7 +9,9 @@ Class Modelo_index extends Conexiones{
 	public function mostrar_ajax()
 	{
 		//$sentencia = "select * from countries";
-		$sentencia = "Select t1.id_cliente,t1.cedula,t1.nombre,t1.apellido_paterno,t1.apellido_materno,t1.edad,t1.direccion,t1.ocupacion,t1.telefono_cel as celular ,t1.telefono_oficial as telefono ,t1.email,t2.nombre_tipo from clientes t1, tipo_cliente t2 where t1.tipo_cliente= t2.id_tipocliente";
+		/*$sentencia = "Select t1.id_cliente,t1.cedula,t1.nombre,t1.apellido_paterno,t1.apellido_materno,t1.edad,t1.direccion,t1.ocupacion,t1.telefono_cel as celular ,t1.telefono_oficial as telefono ,t1.email,t2.nombre_tipo from clientes t1, tipo_cliente t2 where t1.tipo_cliente= t2.id_tipocliente";*/
+		$sentencia = "Select 'Micael'";
+  
 		//var_dump($this->pdo);
 		//exit;
 		$resultado = $this->pdo->prepare($sentencia);
@@ -24,12 +26,14 @@ Class Modelo_index extends Conexiones{
 		echo $html; exit;*/
 		$num = $resultado->fetchAll();
 
+		//echo "aqui"; exit;
 		$valor = array();
 		$valor = array(
 		"data"=> $num
 		); 
 		header('Content-type: application/json');
 		echo json_encode($valor);
+		//print_r($datos);
 		//return $datos;
 	}
 	public function tipo_cliente_ajax()
