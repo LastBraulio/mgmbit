@@ -34,7 +34,7 @@
 			background-color: rgba(255,255,255,0.8);
 		}
 		#jumbotron{
-			background-image: url("https://static.telemetro.com/clip/fe95eb54-0b0b-46ff-a800-f9677889e3c4_16-9-aspect-ratio_default_0.jpg");
+			background-image: url("resourse/img/fe95eb54-0b0b-46ff-a800-f9677889e3c4_16-9-aspect-ratio_default_0.jpg");
 			height: 300px;
     		background-attachment: fixed;
     		background-position: center;
@@ -42,7 +42,7 @@
     		background-size: cover;
 		}
 		#jumbotron2{
-			background-image: url("https://cdn.pixabay.com/photo/2017/02/24/18/04/landscape-2095783_960_720.jpg");
+			background-image: url("resourse/img/landscape-2095783_960_720.webp");
 			height: 300px;
     		background-attachment: fixed;
     		background-position: center;
@@ -102,7 +102,7 @@
 		    </div>
 		    <div class="col-sm">
 		    	<div class="asset asset--iphone">
-		    		<img class="w-75 mt-5 animate__animated animate__bounce" src="https://cobo.com/_next/static/images/phone3-ad93625475fe0f307d147804ebd8c987.png">
+		    		<img class="w-75 mt-5 animate__animated animate__bounce" src="resourse/img/phone3-ad93625475fe0f307d147804ebd8c987.png">
 		    	</div>
 		    </div>
 		  </div>
@@ -117,7 +117,7 @@
     
     <div class="row my-5 animate__animated animate__bounce animate__delay-2s">
     	<div class="col-md-6">
-    		<img src="https://st4.depositphotos.com/11953928/25472/v/450/depositphotos_254721254-stock-illustration-bitcoin-and-cellphone.jpg">
+    		<img src="resourse/img/depositphotos_254721254-stock-illustration-bitcoin-and-cellphone.jpg">
     	</div>
     	<div class="col-md-6">
     		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -135,7 +135,7 @@
         <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
       </div>
       <div class="col-md-5">
-        <img src="https://st4.depositphotos.com/11953928/25472/v/450/depositphotos_254721254-stock-illustration-bitcoin-and-cellphone.jpg">
+        <img src="resourse/img/depositphotos_254721254-stock-illustration-bitcoin-and-cellphone.jpg">
       </div>
     </div>
 
