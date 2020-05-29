@@ -19,6 +19,9 @@ class Controller_index {
     }
     function login(){
     	include("view/view_login/login.php");
+    }
+    function registro(){
+    	include("view/view_login/registro.php");
     }	
 	public function error404()
 	{
