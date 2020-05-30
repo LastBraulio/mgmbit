@@ -8,7 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
-
+    <script type="text/javascript" src="resourse/js/simplescrollup.js"></script>
     <style type="text/css">
     	*{
     		margin: 0;padding: 0;
@@ -49,11 +49,36 @@
     		background-repeat: no-repeat;
     		background-size: cover;
 		}
+		.simplescrollup__button {
+		    position: fixed;
+		    bottom: 3rem;
+		    right: 3rem;
+		    transition: 1s all;
+		    z-index: 10000;
+		   
+
+		   	
+			padding:20px; 
+			background:#a07a0a;
+			font-size:20px;
+			color:#fff;
+			cursor:pointer;
+			
+		}
+		.simplescrollup__button--show {
+		    transform: translateX(0);
+		}
+		.simplescrollup__button--hide {
+		    transform: translateX(120px);
+		}
     </style>
     <link rel="stylesheet" type="text/css" href="resourse/css/carousel.css">
+       <!-- Custom fonts for this template--> 
+    <link href="resourse/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <title>MGMBIT - TRADING BITCOIN - PRODUCTS PANAMÁ</title>
   </head>
-  <body>
+  <body >
+  <a href="#up" class="simplescrollup__button simplescrollup__button--hide"><i class="fab fa-bitcoin"></i></a>
   <div class="container-fluid">
   	<header>
   		<br><br>
@@ -332,3 +357,4 @@
 	    </div>
 	</footer>
 </div>
+ 

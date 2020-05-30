@@ -25,6 +25,13 @@
       .bg-dark {
           background-color: #423a13 !important;
       }
+      .light-text{
+        color: #fff;
+      }
+      .light-text:hover{
+        color: #fff;
+      }
+
       .sidebar-sticky {
           background: gray;
           background-image: url("resourse/img/bussiness.jpg") !important;
@@ -62,17 +69,41 @@
     <link rel="stylesheet" type="text/css" href="resourse/css/dashboard.css">
   </head>
   <body>
-    <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
-  <a class="navbar-brand col-md-3 col-lg-2 mr-0 px-3" href="#">MGMBIT</a>
-  <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-toggle="collapse" data-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  
-  <ul class="navbar-nav px-3">
-    <li class="nav-item text-nowrap">
-      <a class="nav-link" href="#">Sign out</a>
-    </li>
-  </ul>
+  <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
+    <a class="navbar-brand col-md-3 col-lg-2 mr-0 px-3" href="#"><i class="fab fa-bitcoin"></i>  MGMBIT</a>
+    <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-toggle="collapse" data-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+      <div class="topbar-divider d-none d-sm-block"></div>
+      <ul class=" nav  ml-auto">
+        <!--<li class="nav-item text-nowrap">
+          <a class="nav-link" href="#">Sign out</a>
+        </li>-->
+         <li class="nav-item dropdown ">
+          <a class="nav-link dropdown-toggle light-text" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Usuario : Braulio Castillo   <img class="img-profile rounded-circle" src="https://avatars3.githubusercontent.com/u/12094121?s=460&v=4" width="30px"> </a>
+          <div class="dropdown-menu dropdown-menu-right text-gray-800 ">
+            <a class="dropdown-item" href="#">
+              <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-800"></i>
+                Profile
+              </a>
+            <a class="dropdown-item" href="#">
+              <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-800"></i>
+                Settings
+            </a>
+            <a class="dropdown-item" href="#">
+              <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-800"></i>
+                Activity Log
+              </a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+              <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-800"></i>
+                Logout
+            </a>
+          </div>
+        </li>
+      </ul>
+
 </nav>
 
 <div class="container-fluid">
@@ -94,69 +125,12 @@
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">
-              <b><span data-feather="shopping-cart"></span>
-              
-              Products</b>
-            </a>
-          </li>
-          <!--<li class="nav-item">
-            <a class="nav-link" href="#">
-              <span data-feather="users"></span>
-              Customers
-            </a>
-          </li>-->
-          <li class="nav-item">
-            <a class="nav-link" href="#">
              <b> <span data-feather="bar-chart-2"></span>
               Invoices</b>
             </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">
-              <b><span data-feather="bar-chart-2"></span>
-              transaction</b>
-            </a>
-          </li>
-          <!--<li class="nav-item">
-            <a class="nav-link" href="#">
-              <span data-feather="layers"></span>
-              Integrations
-            </a>
-          </li>-->
-        </ul>
 
-        <!--<h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
-          <span>Saved reports</span>
-          <a class="d-flex align-items-center text-muted" href="#" aria-label="Add a new report">
-            <span data-feather="plus-circle"></span>
-          </a>
-        </h6>
-        <ul class="nav flex-column mb-2">
-          <li class="nav-item">
-            <a class="nav-link" href="#">
-              <span data-feather="file-text"></span>
-              Current month
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">
-              <span data-feather="file-text"></span>
-              Last quarter
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">
-              <span data-feather="file-text"></span>
-              Social engagement
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">
-              <span data-feather="file-text"></span>
-              Year-end sale
-            </a>
-          </li>
-        </ul>-->
+        </ul>
       </div>
     </nav>
 
@@ -164,14 +138,14 @@
       <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
         <h1 class="h2">Dashboard</h1>
         <div class="btn-toolbar mb-2 mb-md-0">
-          <div class="btn-group mr-2">
+          <!--<div class="btn-group mr-2">
             <button type="button" class="btn btn-sm btn-outline-secondary">Share</button>
             <button type="button" class="btn btn-sm btn-outline-secondary">Export</button>
           </div>
           <button type="button" class="btn btn-sm btn-outline-secondary dropdown-toggle">
             <span data-feather="calendar"></span>
             This week
-          </button>
+          </button>-->
         </div>
       </div>
 
@@ -390,6 +364,24 @@
     </main>
   </div>
 </div>
+<!-- Logout Modal-->
+  <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+          <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+        </div>
+        <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+        <div class="modal-footer">
+          <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+          <a class="btn btn-primary" href="index.php">Logout</a>
+        </div>
+      </div>
+    </div>
+  </div>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
       <script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="https://getbootstrap.com/docs/4.5/dist/js/bootstrap.bundle.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.9.0/feather.min.js"></script>
