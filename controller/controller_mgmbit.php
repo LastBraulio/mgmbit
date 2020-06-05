@@ -15,7 +15,13 @@ class Controller_index {
 		
     }
 	function index(){
-		include("view/view_admin/index.php");
+		//include("view/view_admin/index.php");
+		include("view/view_admin/header.php");
+		include("view/view_admin/navlogin.php");
+		include("view/view_admin/navbar.php");
+		include("view/view_admin/container.php");
+		include("view/view_admin/logout.php");
+		include("view/view_admin/footer.php");
     }
     function login(){
     	include("view/view_login/login.php");

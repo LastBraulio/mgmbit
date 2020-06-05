@@ -134,6 +134,7 @@
 		</div>
 
     </header>
+    <!--contenido-->
     <div id="jumbotron" class="jumbotron">
     	<div class="col-md-12 my-5 ">
     		
@@ -261,6 +262,7 @@
 		    </div>
 		</div>
     </div>
+    <!--footer-->
     <footer class="bg-dark text-muted"> 
         <div class="row">
 	        <div class="col-md-4 ">
