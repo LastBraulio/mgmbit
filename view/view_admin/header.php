@@ -58,6 +58,9 @@
         -ms-user-select: none;
         user-select: none;
       }
+      .breadcrumb{
+        background-color:transparent;
+      }
 
       @media (min-width: 768px) {
         .bd-placeholder-img-lg {
@@ -67,5 +70,6 @@
     </style>
     <!-- Custom styles for this template -->
     <link rel="stylesheet" type="text/css" href="resourse/css/dashboard.css">
+    <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
   </head>
   <body>

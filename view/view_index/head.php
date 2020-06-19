@@ -78,5 +78,6 @@
     <link rel="stylesheet" type="text/css" href="resourse/css/carousel.css">
        <!-- Custom fonts for this template--> 
     <link href="resourse/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
     <title>MGMBIT - TRADING BITCOIN - PRODUCTS PANAMÁ</title>
   </head>
